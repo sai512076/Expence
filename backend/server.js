@@ -20,7 +20,7 @@ app.get('/api/health', (req, res) => {
 
 // MongoDB connection
 const PORT = process.env.PORT || 5000;
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/expenses-tracker';
+const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://copyexpense:mikemicky@cluster0.y1po7dk.mongodb.net/?appName=Cluster0';
 
 mongoose.connect(MONGO_URI)
   .then(() => {
